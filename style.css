@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  font-size: 20px;
+  background: linear-gradient(to right, #ec38bc, #7303c0);
+}
+
+.container-fluid a {
+  color: #fff !important;
+}
+
+.nav-item a {
+  color: #fff !important;
+}
+
+.conteudo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.coluna-esquerda {
+  width: 50%;
+  background-image: url("./img/background.jpg");
+  background-size: cover;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.coluna-direita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 50%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.input {
+  text-align: center;
+  margin: 100px auto;
+  margin-top: 350px;
+}
+
+.input h2 {
+  color: #fff;
+}
+
+.submit {
+  background: linear-gradient(to right, #ec38bc, #7303c0);
+  border: none;
+  padding: 14px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.submit .fa-search {
+  color: #fff;
+}
+
+.submit:hover .fa-search {
+  filter: invert(100%);
+}
+
+.submit:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background: linear-gradient(to right, #4776e6, #8e54e9);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.submit:hover:before {
+  width: 200%;
+  height: 200%;
+  opacity: 1;
+}
+
+.input_text {
+  font-size: 16px;
+  border: 2px solid #ced4da;
+  padding: 12px;
+  border-radius: 4px;
+  width: 250px;
+}
+
+.input_text:focus {
+  border-color: #8e54e9;
+  outline: none;
+}
+
+.close {
+  float: right;
+  margin-top: -2px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.name {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.icon {
+  font-size: 72px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.temp {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.desc {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: #555;
+}
+
+.forecast {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #777;
+}
